@@ -1,0 +1,431 @@
+*{
+    box-sizing: border-box;
+}
+.than-website {
+    width: 1110px;
+    margin: 15px auto auto auto;
+    display: flex;
+    flex-direction: column;
+}
+button:hover {
+    cursor: pointer;
+}
+.phan-1{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+.ten-san-pham{
+    color: #2f302f;
+    margin: 5px 0;
+}
+.anh-san-pham img{
+    width: 100%;
+    height: 100%;
+}
+.anh-san-pham{
+    /*flex: 1;*/
+    border: 3px solid #e0e0e0;
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+}
+.anh-san-pham:hover{
+    border: 2px solid #ffd333;
+}
+.ben-phai-anh-san-pham{
+    flex: 1;
+    padding-left: 40px;
+}
+.so-sao-va-luot-ban {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.so-sao-va-luot-ban #sao_vang{
+    scale: 0.8;
+}
+.thong-tin-phu-san-pham{
+    display: flex;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: Arial, serif;
+    justify-content: space-between;
+}
+.don-vi{
+    flex: 2;
+}
+.nguon-goc{
+    flex: 2.5;
+}
+.tinh-trang{
+    flex: 2.5;
+}
+.gia-san-pham{
+    margin: 10px 0;
+}
+.so-luong-va-lua-chon-mua{
+    display: flex;
+    justify-content: space-between;
+}
+.tieu-de-so-luong{
+    margin: 10px 0;
+}
+.so-luong-va-lua-chon-mua .dieu-chinh-so-luong{
+    display: flex;
+    justify-content: space-between;
+    background: #ebebeb;
+    border-radius: 10px;
+    /*border: 1px solid black;*/
+    width: 100px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+.dieu-chinh-so-luong .tru{
+    border: 0;
+    height: 40px;
+    background: #ebebeb;
+    /*border-radius: 10px;*/
+    flex: 1;
+    color: #8b8b93;
+    font-size: 25px;
+    margin: auto;
+    display: block;
+    justify-items: center;
+    padding-bottom: 5px;
+}
+.tieu-de-so-luong{
+    color: #3D464D;
+    font-weight: bold;
+    font-family: Arial, serif;
+}
+.tru:hover{
+    color: black;
+}
+.dieu-chinh-so-luong .cong{
+    border: 0;
+    height: 40px;
+    background: #ebebeb;
+    /*border-radius: 10px;*/
+    flex: 1;
+    font-size: 25px;
+    margin: auto;
+    color: #8b8b93;
+    display: block;
+    justify-items: center;
+}
+.cong:hover{
+    color: black;
+}
+.dieu-chinh-so-luong .so-luong{
+    background: #ebebeb;
+    height: 40px;
+    /*border: 1px solid black;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tru + .so-luong + .cong{
+    border: none;
+    padding: 0;
+    width: 0;
+}
+.so-luong-va-lua-chon-mua{
+    display: flex;
+}
+.nut-mua-ngay #nut-mua-ngay{
+    border: none;
+    height: 40px;
+    background: #7be03a;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, serif;
+    padding: 0 12px;
+}
+.nut-mua-ngay #nut-mua-ngay:hover{
+    background: #28a745;
+}
+.nut-them-vao-gio #nut-them-vao-gio{
+    border: none;
+    height: 40px;
+    background: #ffd333;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-family: "Arial", serif;
+    font-size: 20px;
+    padding: 0 12px}
+.nut-them-vao-gio #nut-them-vao-gio:hover{
+    background: burlywood;
+}
+/*phần nút hai tab*/
+.tab{
+    margin-top: 60px;
+    margin-bottom: 0;
+    /*border: 1px solid;*/
+}
+.hai-button-tab{
+    display: flex;
+    justify-content: left;
+}
+.hai-button-tab button{
+    font-weight: bold;
+    border: 0;
+    background: 0;
+    font-size: 20px;
+    color: #2f302f;
+    padding: 10px 10px;
+    width: 110px;
+    text-align: center;
+    /*border: 1px solid;*/
+}
+.hai-button-tab button + button{
+    margin: 0 0 0 5px;
+}
+@keyframes quaPhai {
+    to{
+        transform: translateX(105%);
+    }
+}
+@keyframes quaTrai {
+    from{
+        transform: translateX(105%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.thanh-gach-chan-tab{
+    display: inline-block;
+    background: #fd7e14;
+    height: 3px;
+    width: 110px;
+    border-radius: 10px;
+    float: left;
+}
+/*chi tiết trong tab*/
+.phan-2{
+    margin-top: 20px;
+}
+.chi-tiet-tab{
+    border: 3px solid #e0e0e0;
+}
+@keyframes keoDai1 {
+    0%{
+        opacity: 0;
+        height: 50px;
+    }
+    100%{
+        height: 100%;
+        opacity: 1;
+    }
+}
+@keyframes keoDai2 {
+    0%{
+        opacity: 0;
+        height: 50px;
+    }
+    100%{
+        height: 100%;
+        opacity: 1;
+    }
+}
+.tab1{
+    /* display: none; */
+    /* border: 1px solid; */
+    margin: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3D464D;
+}
+.tab1 h1{
+    margin: 15px 0;
+}
+.tab2{
+    display: none;
+    margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tab2 .tieu-de-tab2{
+    margin-left: 60px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: #3D464D;
+}
+.tab2 .than-tab2{
+    display: flex;
+    justify-content: space-between;
+}
+.tong-quan-so-sao{
+    width: 300px;
+    /*border: 1px solid;*/
+    height: 220px;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+.sao-trung-binh-va-so-danh-gia{
+    display: flex;
+    justify-content: left;
+    height: 50px;
+    /* border: 1px solid; */
+}
+#sao_vang{
+    color: gold;
+}
+#sao_den{
+    color: #e0e0e0;
+}
+.sao-trung-binh{
+    /*border: 1px solid;*/
+    margin: 0;
+    padding: 0;
+}
+#sao-trung-binh{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: #3D464D;
+}
+.tong-so-danh-gia-va-sao-vang{
+    /*border: 1px solid;*/
+    margin-left: 10px;
+}
+#tong-so-danh-gia{
+    margin: 0;
+    padding: 0;
+    color: #999999;
+}
+.tong-so-danh-gia-va-sao-vang .sao-vang{
+    margin: 0 0 0 5px;
+    scale: 1.1;
+    padding: 0;
+}
+.danh-sach-so-sao-5-1 div{
+    /*margin: 5px 0;*/
+}
+.thanh-sao-va-phan-tram-sao{
+    display: flex;
+    justify-content: left;
+    /*border: 1px solid;*/
+    margin: 3px 0;
+}
+.so-danh-gia{
+    margin-left: 3px;
+    text-align: center;
+    color: #999999;
+}
+.thanh-phan-tram-sao{
+    display: inline-block;
+    justify-items: center;
+    background: #e0e0e0;
+    height: 5px;
+    width: 50%;
+    border-radius: 10px;
+    margin: auto 0;
+    padding: 0;
+    /*border: 1px solid;*/
+}
+#thanh-sao{
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    /*border: 1px solid;*/
+}
+#thanh-sao .sao{
+    scale: 0.8;
+}
+#thanh-sao i+i{
+    margin: 0;
+    padding: 0;
+}
+.tong-quan-danh-gia {
+    flex: 1;
+    /*border: 1px solid;*/
+    margin-right: 50px;
+}
+.phan-loai-danh-gia-theo-so-sao{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    margin: auto;
+    padding: 10px;
+}
+.tieu-de-phan-loai-theo{
+    margin: auto 20px auto auto;
+}
+.phan-loai-danh-gia-theo-so-sao button+button{
+    margin: auto;
+}
+.phan-loai-danh-gia-theo-so-sao button{
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    padding: 3px 8px;
+    background: #f6f6f6;
+    color: #3D464D;
+}
+.phan-loai-theo-tat-ca{
+    margin-right: 15px;
+}
+.danh-sach-danh-gia-cua-khach-hang{
+    height: 400px;
+    width: 100%;
+}
+@keyframes rongDan {
+    0%{
+        height: 0;
+        opacity: 0;
+    }
+    100%{
+        height: 100%;
+        opacity: 1;
+    }
+}
+.anh-dai-dien-cua-kh{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+.ten-khach-hang{
+    font-weight: bold;
+    font-size: 20px;
+}
+.thoi-gian-danh-gia{
+    font-size: 15px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+.chi-tiet-danh-gia{
+    font-size: 18px;
+    color: #2f302f;
+}
+.khung-danh-gia{
+    display: flex;
+    height: 30%;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 5px 5px;
+    margin-top: 2%;
+}
+/*thanh hiển thị số trang*/
+.thanh-trang-danh-gia{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.thanh-trang-danh-gia button{
+    border: none;
+    border-radius: 5px;
+    scale: 1.2;
+    text-align: center;
+    padding: 2px 10px;
+    color: #3D464D;
+    align-content: center;
+    background: #e0e0e0;
+}
+.thanh-trang-danh-gia button:hover{
+    background: darksalmon;
+}
